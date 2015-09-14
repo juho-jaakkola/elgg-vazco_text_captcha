@@ -7,7 +7,7 @@ function vazco_text_captcha_init() {
 	// Provide a hook handler that adds default actions that the captcha is added to
 	elgg_register_plugin_hook_handler('actionlist', 'captcha', 'vazco_text_captcha_actionlist_hook');
 
-	$actions = elgg_trigger_plugin_hook('actionlist', 'captcha', array(), $actions);
+	$actions = elgg_trigger_plugin_hook('actionlist', 'captcha', array(), array());
 
 	// Register actions to intercept
 	foreach ($actions as $action) {
